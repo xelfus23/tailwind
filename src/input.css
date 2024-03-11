@@ -5,3 +5,84 @@
 .radial-blue{
   background: radial-gradient(lightyellow, skyblue);
 }
+
+@media (min-width: 16/9){
+  .valorant-bg{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 16/9){
+  .valorant-bg{
+    width: auto;
+    height: 100%;
+  }
+}
+hr{
+  width: 100%;
+}
+.valorant-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+}
+#home{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
+#home source{
+  height: auto;
+  width: 100%;
+}
+main{
+  scroll-behavior: smooth;
+}
+.nav-link{
+  opacity: 0.8;
+}
+.box-box{
+  width: 70%;
+}
+
+#about{
+  height: auto;
+}
+.valo-icon{
+  animation: white-to-red 3s linear 3s;
+}
+.valo-icon:hover{
+  filter:
+  saturate(5%)
+  brightness(100)
+  drop-shadow( rgb(255, 48, 48) -3px -3px 0px)
+  drop-shadow( rgb(123, 42, 255) 3px 3px 0px);
+}
+.hue_rotate{
+  filter: drop-shadow(0 0 15px rgb(160, 0, 210));
+  animation: hue-rotate 6s linear infinite;
+}
+@keyframes white-to-red{
+  from{
+    filter: none;
+  }
+  to{
+    filter:
+    saturate(0%)
+    brightness(100)
+  }
+}
+
+@keyframes hue-rotate{
+  from{
+    filter: hue-rotate(360deg);
+  }
+  to{
+    filter: hue-rotate(0deg);
+  }
+}
